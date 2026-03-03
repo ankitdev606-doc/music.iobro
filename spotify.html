@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="spotify.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="navbar">
+        <nav>
+
+            <div class="spotify-logo">
+                <a href="spotify.html"><img src="logo.svg" alt="" srcset=""></a>
+            </div>
+            <div class="spotify-search">
+                <a href="spotify.html"> <img src="home.svg" height="32" width="32" alt="" srcset=""></a>
+                <input type="text" placeholder="🔍 What do you want to listen to?" aria-label="Search">
+            </div>
+            <div class="spotify-manage">
+
+                <div class="sub">
+                    <button class="subscription">Explore Premium</button>
+                </div>
+
+                <div class="sub">
+                    <button class="install"><i class="fa-regular fa-circle-down"></i> install App</button>
+                </div>
+
+                <div class="sub">
+                    <button class="login-btn">Log in</button>
+                </div>
+
+                <div class="sub">
+                    <button class="signup-btn">Sign up</button>
+                </div>
+            </div>
+
+        </nav>
+    </div>
+
+
+
+
+    <div class="main-body">
+        <div class="library-container">
+            <div class="library-sidebar">
+
+                <div class="create-playlist">
+                    <h3>Your Library</h3>
+                    <div class="create-bar">
+                        <a href="#"><i class="fa-solid fa-plus"></i></a>
+                        <a href="#"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
+                    </div>
+                </div>
+
+
+
+                <div class="search-box-2">
+
+                    <div class="search-box">
+                        <label for="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </label>
+                        <input id="search" type="text" placeholder="Search..." />
+                    </div>
+
+                    <div class="recent">
+
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                </div>
+
+            </div>
+            <audio id="first-song"></audio>
+            <div class="song_container">
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+
+        <div class="main-content">
+            <div class="navbar-2">
+
+                <div class="navitem">
+
+                    <a href="#">All</a>
+                    <a href="#">Music</a>
+                    <a href="#">Podcasts</a>
+                </div>
+            </div>
+            <div class="song-album">
+
+                <h3>Recommended For you</h3>
+                <button class="arrow left">&#10094;</button>
+
+                <div class="songalbum-inner">
+
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://i.scdn.co/image/ab67706f00000002d504e44a47a859be6dea9155"
+                            data-testid="card-image" alt=""
+                            class="LBM25IAoFtd0wh7k3EGM Z3N2sU3PRuY4NgvdEz55 DlkUu3oBOxXLc2LtOd3N PgTMmU2Gn7AESFMYhw4i">
+                        <div class="play-btn">
+
+                            <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Green circle -->
+                                <circle cx="24" cy="24" r="24" fill="#3aa89dff" />
+
+                                <!-- Black play triangle -->
+                                <polygon points="20,16 20,32 34,24" fill="#000000" />
+                            </svg>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://i.scdn.co/image/ab67706f00000002d738f28b823980c71ceaf287"
+                            data-testid="card-image" alt=""
+                            class="LBM25IAoFtd0wh7k3EGM Z3N2sU3PRuY4NgvdEz55 PgTMmU2Gn7AESFMYhw4i">
+                        <div class="play-btn">
+
+                            <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Green circle -->
+                                <circle cx="24" cy="24" r="24" fill="#3aa89dff" />
+
+                                <!-- Black play triangle -->
+                                <polygon points="20,16 20,32 34,24" fill="#000000" />
+                            </svg>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://i.scdn.co/image/ab67706f00000002c29455e125a399887a5c12b0"
+                            data-testid="card-image" alt=""
+                            class="LBM25IAoFtd0wh7k3EGM Z3N2sU3PRuY4NgvdEz55 PgTMmU2Gn7AESFMYhw4i">
+                        <div class="play-btn">
+
+                            <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Green circle -->
+                                <circle cx="24" cy="24" r="24" fill="#3aa89dff" />
+
+                                <!-- Black play triangle -->
+                                <polygon points="20,16 20,32 34,24" fill="#000000" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://i.scdn.co/image/ab67706f00000002d3ae8c970616b0e006b8a933"
+                            data-testid="card-image" alt=""
+                            class="LBM25IAoFtd0wh7k3EGM Z3N2sU3PRuY4NgvdEz55 PgTMmU2Gn7AESFMYhw4i">
+                        <div class="play-btn">
+
+                            <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Green circle -->
+                                <circle cx="24" cy="24" r="24" fill="#3aa89dff" />
+
+                                <!-- Black play triangle -->
+                                <polygon points="20,16 20,32 34,24" fill="#000000" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://i.scdn.co/image/ab67706f000000023675245cf059a65cd708a889"
+                            data-testid="card-image" alt=""
+                            class="LBM25IAoFtd0wh7k3EGM Z3N2sU3PRuY4NgvdEz55 PgTMmU2Gn7AESFMYhw4i">
+                        <div class="play-btn">
+
+                            <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Green circle -->
+                                <circle cx="24" cy="24" r="24" fill="#3aa89dff" />
+
+                                <!-- Black play triangle -->
+                                <polygon points="20,16 20,32 34,24" fill="#000000" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://i.scdn.co/image/ab67706f000000024e024a9e622c810732e8bc41"
+                            data-testid="card-image" alt=""
+                            class="LBM25IAoFtd0wh7k3EGM Z3N2sU3PRuY4NgvdEz55 PgTMmU2Gn7AESFMYhw4i">
+                        <div class="play-btn">
+
+                            <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Green circle -->
+                                <circle cx="24" cy="24" r="24" fill="#3aa89dff" />
+
+                                <!-- Black play triangle -->
+                                <polygon points="20,16 20,32 34,24" fill="#000000" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://i.scdn.co/image/ab67706f00000002ee63369d96830c7541c86aeb"
+                            data-testid="card-image" alt=""
+                            class="LBM25IAoFtd0wh7k3EGM Z3N2sU3PRuY4NgvdEz55 DlkUu3oBOxXLc2LtOd3N PgTMmU2Gn7AESFMYhw4i">
+                        <div class="play-btn">
+
+                            <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+
+                                <!-- Green circle -->
+                                <circle cx="24" cy="24" r="24" fill="#3aa89dff" />
+
+                                <!-- Black play triangle -->
+                                <polygon points="20,16 20,32 34,24" fill="#000000" />
+                            </svg>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <button class="arrow right">&#10095;</button>
+            </div>
+
+            <div class="song-album">
+
+                <h3>Charts</h3>
+
+                <button class="arrow left">&#10094;</button>
+
+                <div class="songalbum-inner">
+
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://i.scdn.co/image/ab67706f000000022b117d6dc96345bedf9adc1b"
+                            data-testid="card-image" alt=""
+                            class="LBM25IAoFtd0wh7k3EGM Z3N2sU3PRuY4NgvdEz55 DlkUu3oBOxXLc2LtOd3N PgTMmU2Gn7AESFMYhw4i">
+                        <div class="play-btn">
+
+                            <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Green circle -->
+                                <circle cx="24" cy="24" r="24" fill="#3aa89dff" />
+
+                                <!-- Black play triangle -->
+                                <polygon points="20,16 20,32 34,24" fill="#000000" />
+                            </svg>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://i.scdn.co/image/ab67706f00000002542573c99262fd3f6129d229"
+                            data-testid="card-image" alt=""
+                            class="LBM25IAoFtd0wh7k3EGM Z3N2sU3PRuY4NgvdEz55 DlkUu3oBOxXLc2LtOd3N PgTMmU2Gn7AESFMYhw4i">
+                        <div class="play-btn">
+
+                            <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Green circle -->
+                                <circle cx="24" cy="24" r="24" fill="#3aa89dff" />
+
+                                <!-- Black play triangle -->
+                                <polygon points="20,16 20,32 34,24" fill="#000000" />
+                            </svg>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://i.scdn.co/image/ab67706f00000002407e196cdc60170b56b1b169"
+                            data-testid="card-image" alt=""
+                            class="LBM25IAoFtd0wh7k3EGM Z3N2sU3PRuY4NgvdEz55 PgTMmU2Gn7AESFMYhw4i">
+                        <div class="play-btn">
+
+                            <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Green circle -->
+                                <circle cx="24" cy="24" r="24" fill="#3aa89dff" />
+
+                                <!-- Black play triangle -->
+                                <polygon points="20,16 20,32 34,24" fill="#000000" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg"
+                            data-testid="card-image" alt=""
+                            class="LBM25IAoFtd0wh7k3EGM Z3N2sU3PRuY4NgvdEz55 PgTMmU2Gn7AESFMYhw4i">
+                        <div class="play-btn">
+
+                            <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Green circle -->
+                                <circle cx="24" cy="24" r="24" fill="#3aa89dff" />
+
+                                <!-- Black play triangle -->
+                                <polygon points="20,16 20,32 34,24" fill="#000000" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://i.scdn.co/image/ab67706f00000002a084b5fe0409433b54593ea1"
+                            data-testid="card-image" alt=""
+                            class="LBM25IAoFtd0wh7k3EGM Z3N2sU3PRuY4NgvdEz55 PgTMmU2Gn7AESFMYhw4i">
+                        <div class="play-btn">
+
+                            <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Green circle -->
+                                <circle cx="24" cy="24" r="24" fill="#3aa89dff" />
+
+                                <!-- Black play triangle -->
+                                <polygon points="20,16 20,32 34,24" fill="#000000" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://i.scdn.co/image/ab67706f00000002df7181b7a9439c7b7b43c056"
+                            data-testid="card-image" alt=""
+                            class="LBM25IAoFtd0wh7k3EGM Z3N2sU3PRuY4NgvdEz55 DlkUu3oBOxXLc2LtOd3N PgTMmU2Gn7AESFMYhw4i">
+                        <div class="play-btn">
+
+                            <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Green circle -->
+                                <circle cx="24" cy="24" r="24" fill="#3aa89dff" />
+
+                                <!-- Black play triangle -->
+                                <polygon points="20,16 20,32 34,24" fill="#000000" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://i.scdn.co/image/ab67706f00000002c4a2097eaa025eba182747da"
+                            data-testid="card-image" alt=""
+                            class="LBM25IAoFtd0wh7k3EGM Z3N2sU3PRuY4NgvdEz55 DlkUu3oBOxXLc2LtOd3N PgTMmU2Gn7AESFMYhw4i">
+                        <div class="play-btn">
+
+                            <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Green circle -->
+                                <circle cx="24" cy="24" r="24" fill="#3aa89dff" />
+
+                                <!-- Black play triangle -->
+                                <polygon points="20,16 20,32 34,24" fill="#000000" />
+                            </svg>
+                        </div>
+                    </div>
+
+
+                </div>
+                <button class="arrow right">&#10095;</button>
+            </div>
+            <div class="song-album">
+
+                <h3>Featured Charts</h3>
+
+                <button class="arrow left">&#10094;</button>
+
+                <div class="songalbum-inner">
+
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg"
+                            data-testid="card-image" alt=""
+                            class="LBM25IAoFtd0wh7k3EGM Z3N2sU3PRuY4NgvdEz55 DlkUu3oBOxXLc2LtOd3N PgTMmU2Gn7AESFMYhw4i">
+                        <div class="play-btn">
+
+                            <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Green circle -->
+                                <circle cx="24" cy="24" r="24" fill="#3aa89dff" />
+
+                                <!-- Black play triangle -->
+                                <polygon points="20,16 20,32 34,24" fill="#000000" />
+                            </svg>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_in_default.jpg"
+                            data-testid="card-image" alt=""
+                            class="LBM25IAoFtd0wh7k3EGM Z3N2sU3PRuY4NgvdEz55 DlkUu3oBOxXLc2LtOd3N PgTMmU2Gn7AESFMYhw4i">
+                        <div class="play-btn">
+
+                            <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Green circle -->
+                                <circle cx="24" cy="24" r="24" fill="#3aa89dff" />
+
+                                <!-- Black play triangle -->
+                                <polygon points="20,16 20,32 34,24" fill="#000000" />
+                            </svg>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_global_default.jpg"
+                            data-testid="card-image" alt=""
+                            class="LBM25IAoFtd0wh7k3EGM Z3N2sU3PRuY4NgvdEz55 DlkUu3oBOxXLc2LtOd3N PgTMmU2Gn7AESFMYhw4i">
+                        <div class="play-btn">
+
+                            <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Green circle -->
+                                <circle cx="24" cy="24" r="24" fill="#3aa89dff" />
+
+                                <!-- Black play triangle -->
+                                <polygon points="20,16 20,32 34,24" fill="#000000" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_in_default.jpg"
+                            data-testid="card-image" alt=""
+                            class="LBM25IAoFtd0wh7k3EGM Z3N2sU3PRuY4NgvdEz55 DlkUu3oBOxXLc2LtOd3N PgTMmU2Gn7AESFMYhw4i">
+                        <div class="play-btn">
+
+                            <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Green circle -->
+                                <circle cx="24" cy="24" r="24" fill="#3aa89dff" />
+
+                                <!-- Black play triangle -->
+                                <polygon points="20,16 20,32 34,24" fill="#000000" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg"
+                            data-testid="card-image" alt="">
+                        <div class="play-btn">
+
+                            <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Green circle -->
+                                <circle cx="24" cy="24" r="24" fill="#3aa89dff" />
+
+                                <!-- Black play triangle -->
+                                <polygon points="20,16 20,32 34,24" fill="#000000" />
+                            </svg>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <button class="arrow right">&#10095;</button>
+            </div>
+
+            <hr>
+
+
+            <footer>
+                <div class="discription">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Jobs</a></li>
+                        <li><a href="">For the Record</a></li>
+                    </ul>
+                </div>
+                <div class="discription">
+                    <h4>Communities</h4>
+                    <ul>
+                        <li><a href="">For Artists</a></li>
+                        <li><a href="">Developers</a></li>
+
+                        <li><a href="">Advertising</a></li>
+                        <li><a href="">Vendors</a></li>
+                        <li><a href="">Investors</a></li>
+                    </ul>
+                </div>
+                <div class="discription">
+                    <h4>Useful links</h4>
+                    <ul>
+                        <li><a href="">Support</a></li>
+                        <li><a href="">Free Mobile App</a></li>
+                        <li><a href="">Popular by Country</a></li>
+                        <li><a href="">Import your music</a></li>
+                    </ul>
+                </div>
+
+                <div class="social">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </footer>
+
+        </div>
+
+        <div class="what-play">
+            <div class="image" id="image">
+
+                <img class="image-3" src="https://open.spotifycdn.com/cdn/images/download-page-image.781553a2.png"
+                    alt="" srcset="">
+                <div class="titel">
+                    <p id="songTitle"></p>
+                </div>
+
+                <div class="extra" id="extra_text">
+                    <h2>Download Spotify for Windows</h2>
+                    <p>Enjoy high-quality audio, offline playback, and a lively friend feed to stay in tune with your
+                        friends' favourites.</p>
+                    <button class="download-btn">Download Spotify</button>
+
+
+                </div>
+            </div>
+
+
+            <div class="play-bar">
+
+
+                <div class="other-control">
+
+                </div>
+
+                <div class="controles">
+                    <div class="control-btns">
+                        <i class="fa-solid fa-shuffle" style="cursor: pointer;"></i>
+                        <i class="fa-solid fa-backward-step" style="cursor: pointer;"></i>
+
+                        <div class="play-me play-for">
+                            <svg width="48" height="48" viewBox="0 0 48 48">
+                                <circle cx="24" cy="24" r="24" fill="#3aa89dff" />
+                                <polygon points="20,16 20,32 34,24" fill="#000000" />
+                            </svg>
+                        </div>
+
+                        <i class="fa-solid fa-forward-step" style="cursor: pointer;"></i>
+                        <i class="fa-solid fa-repeat" style="cursor: pointer;"></i>
+                    </div>
+
+                    <div class="timeline">
+                        <span id="currentTime">0:00</span>
+
+                        <div class="progress-container" id="progressContainer">
+                            <div class="progress-bar" id="progressBar"></div>
+                        </div>
+
+                        <span id="duration">0:00</span>
+                    </div>
+
+
+                </div>
+
+
+                <div class="other-control">
+                    <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline"
+                        style="--encore-icon-height: var(--encore-graphic-size-decorative-smaller); cursor: pointer; --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"
+                        viewBox="0 0 16 16" width="16" height="16" fill="white">
+                        <path fill="white"
+                            d="M6 2.75C6 1.784 6.784 1 7.75 1h6.5c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0 1 14.25 15h-6.5A1.75 1.75 0 0 1 6 13.25zm1.75-.25a.25.25 0 0 0-.25.25v10.5c0 .138.112.25.25.25h6.5a.25.25 0 0 0 .25-.25V2.75a.25.25 0 0 0-.25-.25zm-6 0a.25.25 0 0 0-.25.25v6.5c0 .138.112.25.25.25H4V11H1.75A1.75 1.75 0 0 1 0 9.25v-6.5C0 1.784.784 1 1.75 1H4v1.5zM4 15H2v-1.5h2z">
+                        </path>
+                        <path fill="white" d="M13 10a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-1-5a1 1 0 1 1-2 0 1 1 0 0 1 2 0">
+                        </path>
+                    </svg>
+
+                    <i class="fa-solid fa-volume-high" id="muteBtn" style="cursor:pointer"></i>
+                    <input type="range" min="0" max="100" value="50" class="volume-slider" style="cursor: pointer;"
+                        oninput="document.getElementById('first-song').volume = this.value / 100">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Bottom Tab Bar -->
+<div class="bottom-tab-bar" id="bottomTabBar">
+  <div class="tab-item" onclick="window.location='spotify.html'">
+    <i class="fa-solid fa-house"></i>
+    HOME
+  </div>
+  <div class="tab-item" onclick="document.querySelector('.spotify-search input')?.focus()">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    SEARCH
+  </div>
+  <div class="tab-item active" onclick="toggleLibraryDrawer()">
+    <i class="fa-solid fa-music"></i>
+    LIBRARY
+  </div>
+  <div class="tab-item" onclick="">
+    <i class="fa-regular fa-user"></i>
+    PROFILE
+  </div>
+</div>
+    <script src="spotify.js"></script>
+
+</body>
+
+</html>
